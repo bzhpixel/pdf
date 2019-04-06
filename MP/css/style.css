@@ -1,0 +1,33 @@
+/* tr:nth-child(even) {background-color: #f2f2f2;} */
+
+table{
+	margin:auto;
+	text-align:center;
+	border:2px solid black;
+	border-radius:10px;
+}
+input{
+	text-align:center;
+}
+
+.unselectable {
+	background-color: #ABAAAA;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+
+.selection{
+    text-align: center;
+    margin:auto;
+    padding-bottom:10px;
+}
+
+.selection select{
+    margin-right:50px;
+}
