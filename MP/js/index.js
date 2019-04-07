@@ -1,18 +1,4 @@
-
-/* window.onload = function(e){
-	console.log("ajax");
-	var xmlhttp = new XMLHttpRequest();
-        xmlhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-								//console.log("succes");
-                //document.getElementById("milkSelect").innerHTML = this.responseText;
-            }
-        };
-        xmlhttp.open("GET", "./js/ajaxMilk.js", true);
-        xmlhttp.send();
-}; */
-
-
+/*SheetJS*/
 /* processing array buffers, only required for readAsArrayBuffer */
 function fixdata(data) {
 	let o = "", l = 0, w = 10240;
@@ -64,70 +50,15 @@ document.getElementById("milkSelect").addEventListener("change", (e)=>{
 
 
 document.getElementById("waterInput").addEventListener("input", (e) => {
-/* 	let water = parseInt(document.getElementById("waterInput").value);
-	let milk = parseInt(document.getElementById("milkInput").value);
-	let cream = parseInt(document.getElementById("creamInput").value);
-
-	document.getElementById("totalInput").value = water + milk + cream; */
-
 	calculate();
 });
 
 document.getElementById("milkInput").addEventListener("input", (e) =>{
-/* 	let water = parseInt(document.getElementById("waterInput").value);
-	let milk = parseInt(document.getElementById("milkInput").value);
-	let cream = parseInt(document.getElementById("creamInput").value);
-
-	document.getElementById("totalInput").value = water + milk + cream;
-
-
-	let milkES = parseFloat(document.getElementById("milkES").value);
-	let milkCalculated = milk * 38/ milkES;
-	document.getElementById("milkCalculated").value = milkCalculated.toFixed(2); */
 	calculate();
 
 });
 
 document.getElementById("creamInput").addEventListener("input", (e) =>{
-/* 	let water = parseInt(document.getElementById("waterInput").value);
-	let milk = parseInt(document.getElementById("milkInput").value);
-	let cream = parseInt(document.getElementById("creamInput").value);
-	let milkES = parseFloat(document.getElementById("milkES").value);
-
-
-	if(cream == 0){
-
-		let milkES = parseFloat(document.getElementById("milkES").value);
-		let milkCalculated = milk * 38/ milkES;
-		document.getElementById("milkCalculated").value = milkCalculated.toFixed(2);
-
-
-	}else{
-		let creamES = parseFloat(document.getElementById("creamES").value);
-		let creamMG = parseFloat(document.getElementById("creamMG").value);
-
-		let creamCalculated = cream * 40 / creamMG;
-		document.getElementById("creamCalculated").value = creamCalculated.toFixed(2);
-
-		let milkCalculated = (milk*38-(creamCalculated*creamES - cream*44)) / milkES;
-		document.getElementById("milkCalculated").value = milkCalculated.toFixed(2);
-
-		let waterCalculated = (water + milk + cream)-(creamCalculated + milkCalculated);
-		document.getElementById("waterCalculated").value = waterCalculated.toFixed(2);
-
-
-		 
-		document.getElementById("totalCalculated").value = (waterCalculated + milkCalculated + creamCalculated).toFixed(2);
-
-
-
-	
-	}
-
-
-
-	document.getElementById("totalInput").value = water + milk + cream;*/
-
 	calculate();
 });
 
@@ -160,6 +91,7 @@ function calculate(){
 		document.getElementById("milkCalculated").value = milkCalculated.toFixed(2);
 
 		let creamCalculated = 0;
+		document.getElementById("creamCalculated").value = creamCalculated;
 
 		let waterCalculated = (water + milk)-(milkCalculated);
 		document.getElementById("waterCalculated").value = waterCalculated.toFixed(2);
@@ -168,11 +100,15 @@ function calculate(){
 		let creamES = parseFloat(document.getElementById("creamES").value);
 		let creamMG = parseFloat(document.getElementById("creamMG").value);
 
+
 		let creamCalculated = cream * 40 / creamMG;
 		document.getElementById("creamCalculated").value = creamCalculated.toFixed(2);
 
 		let milkCalculated = (milk*38-(creamCalculated*creamES - cream*44)) / milkES;
 		document.getElementById("milkCalculated").value = milkCalculated.toFixed(2);
+
+
+
 
 		let waterCalculated = (water + milk + cream)-(creamCalculated + milkCalculated);
 		document.getElementById("waterCalculated").value = waterCalculated.toFixed(2);

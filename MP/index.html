@@ -4,6 +4,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Atelier Sauce - MP</title>
+
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+
 	<link rel="stylesheet" href="./css/style.css">
 	<script src="./sheetJS/xlsx.full.min.js"></script>
 </head>
@@ -45,7 +48,7 @@
 			</tr>
 			<tr>
 				<td>Eau</td>
-				<td><input type="text" value="0" id="waterInput" tabindex="1"></td>
+				<td><input type="text" value="0" id="waterInput" tabindex="1" onClick="this.setSelectionRange(0, this.value.length)"></td>
 				<td></td>
 				<td></td>
 				<td><input type="text" tabindex="-1" readonly="readonly" class="unselectable" id="waterCalculated"></td>
@@ -53,21 +56,21 @@
 			</tr>
 			<tr>
 				<td>Lait</td>
-				<td><input type="text" value="0" id="milkInput" tabindex="2"></td>
+				<td><input type="text" value="0" id="milkInput" tabindex="2" onClick="this.setSelectionRange(0, this.value.length)"></td>
 				<td><input type="text" id="milkES"></td>
 				<td></td>
 				<td><input type="text" tabindex="-1" readonly="readonly" class="unselectable" id="milkCalculated"></td>
 			</tr>
 			<tr>
 				<td>Creme</td>
-				<td><input type="text" value="0" id="creamInput" tabindex="3"></td>
+				<td><input type="text" value="0" id="creamInput" tabindex="3" onClick="this.setSelectionRange(0, this.value.length)"></td>
 				<td><input type="text" id="creamES"></td>
 				<td><input type="text" id="creamMG"></td>
 				<td><input type="text" tabindex="-1" readonly="readonly" class="unselectable" id="creamCalculated"></td>
 			</tr>
 			<tr>
 				<td>Total</td>
-				<td><input type="text" value="0" readonly="readonly" id="totalInput"></td>
+				<td><input type="text" value="0" readonly="readonly" class="unselectable" id="totalInput"></td>
 				<td></td>
 				<td></td>
 				<td><input type="text" tabindex="-1" readonly="readonly" class="unselectable" id="totalCalculated"></td>

@@ -1,11 +1,29 @@
 /* tr:nth-child(even) {background-color: #f2f2f2;} */
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	
+}
+
+body{
+    background-color: #BEE0F3;
+}
+
 
 table{
 	margin:auto;
 	text-align:center;
 	border:2px solid black;
-	border-radius:10px;
+    border-radius:10px;
+    background-color: white;
+    border-collapse: collapse;
 }
+
+th, td{
+    padding:5px;
+}
+
 input{
 	text-align:center;
 }
