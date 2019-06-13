@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pasto</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="../MP/sheetJS/xlsx.full.min.js"></script>
+</head>
+<body>
+        <div id="selection">
+                <label for="inputPHM">PHM: </label>
+                <input type="file" id="inputPHM">
+        </div>
+    <main style="display:flex">
+
+    <div id="leftPanel" style="width:80%">
+
+        <span>OP  :  </span> <span id="OP_OP" style="width:20%"></span><br>
+        <div style="display:flex; ">
+            <br>
+            <span>Parfum  :  </span> <span id="OP_parfum" style="width:20%"></span>
+            <span>Code Mix  :  </span> <span id="OP_code_mix" style="width:20%"></span>
+            <span>Quantité  :  </span> <span id="OP_quantite" style="width:20%"></span>
+        </div>
+        <br>
+        <div style="display:flex; ">
+            <span>produit  :  </span> <span id="OP_produit" style="width:20%"></span>
+            <span>Cuve  :  </span> <span id="OP_cuve" style="width:20%"></span>
+        </div>
+        <br>
+        <div style="display:flex; ">
+            <span>Remarque  :  </span> <span id="OP_Remarque" style="width:20%"></span>
+            <span>Consignes  :  </span> <span id="OP_Consigne" style="width:20%"></span>
+        </div>
+        <hr>
+        <label for="checkbox_Liquiverteur">Liquiverteur</label>
+        <input type="checkbox" id="checkbox_Liquiverteur">
+        <label for="checkbox_Flex">FlexMix</label>
+        <input type="checkbox" id="checkbox_Flex">
+        <br>
+        <label for="checkbox_pasto1">Pasto 1</label>
+        <input type="checkbox" id="checkbox_pasto1">
+        <label for="checkbox_pasto2">Pasto 2</label>
+        <input type="checkbox" id="checkbox_pasto2">
+        <br>
+        <label for="checkbox_poudre">Poudre</label>
+        <input type="checkbox" id="checkbox_poudre">
+        <br>
+        <label for="checkbox_arome">Arome</label>
+        <input type="checkbox" id="checkbox_arome">
+        <br>
+        <label for="checkbox_fruit">fruit</label>
+        <input type="checkbox" id="checkbox_fruit">
+        <br>
+        <label for="checkbox_tank">tank</label>
+        <input type="text" id="checkbox_tank">   
+        <br>
+        <label for="checkbox_visa">visa</label>
+        <input type="text" id="checkbox_visa"> 
+
+    <span></span>
+    </div>
+
+    <div id="rightPanel" style="width:20%"></div>
+ 
+    
+    </main>
+    <script src="./js/readPHM.js"></script>
+</body>
+</html>
