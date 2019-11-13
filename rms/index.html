@@ -18,23 +18,26 @@
 
 
 
-        <main>
+        <main class="container" style="max-height: 100%;">
                 <div id="selectionPHS">
-                <label for="inputPHS">Planning PHS: </label>
-                <input type="file" id="inputPHS">
+                        <div class="input-group mb-3 vertical-center">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text">Liste à servir: </span>
+                                </div>
+                                <div class="custom-file">
+                                  <input type="file" class="custom-file-input" id="inputPHS">
+                                  <label class="custom-file-label" for="inputPHS">Choose file</label>
+                                </div>
+                              </div>
                 </div>	
             </main>
                 <div class="container-fluid invisible" id="dataContainer">
 
-                <div class="row pt-5 mb-5">
+                <div class="row pt-1 mb-1">
                         <div class="col">
                                 <div id="DataPanel">
                                         <table id="DataPanelTable">
                                             <tbody id="DataPanelTableBody">
-                                                <tr><td colspan="4">Purée</td></tr>
-                                                <tr><td colspan="4">Arome</td></tr>
-                                                <tr><td colspan="4">Poudre</td></tr>
-                                                <tr><td colspan="4">Autres</td></tr>
                                             </tbody>
                                         </table>
                                         </div>

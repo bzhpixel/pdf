@@ -1,3 +1,24 @@
+main{
+  min-height:100vh;
+  height:100vh;
+}
+#selectionPHS{
+  min-height:100vh;
+  height:100vh;
+}
+#inputPHS{
+  margin-top:auto;
+  margin-bottom:auto;
+}
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+
 table {
     border-collapse: collapse;
     width:100%;
@@ -11,6 +32,17 @@ table {
   tr:hover{
       background-color: lightgrey;
   }
+
+.tableH1{
+  background-color: rgb(179, 177, 177);
+  margin:8px;
+  padding:8px;
+  font-size: large;
+  font-weight: bolder;
+  text-align: center;
+}
+
+
 
   #PHS_OP{
     background-color: #fff200;

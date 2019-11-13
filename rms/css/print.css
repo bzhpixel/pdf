@@ -11,6 +11,17 @@ table {
   tr:hover{
       background-color: lightgrey;
   }
+  .tableH1{
+    -webkit-print-color-adjust:exact;
+    print-color-adjust:exact;
+    background-color: rgb(179, 177, 177);
+    margin:8px;
+    padding:8px;
+    font-size: large;
+    font-weight: bolder;
+    text-align: center;
+  }
+  
 
   #PHS_OP{
     background-color: #fff200;
