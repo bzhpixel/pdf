@@ -19,17 +19,83 @@
 
 
         <main class="container" style="max-height: 100%;">
-                <div id="selectionPHS">
-                        <div class="input-group mb-3 vertical-center">
-                                <div class="input-group-prepend">
-                                  <span class="input-group-text">Liste à servir: </span>
+            <div class="container">
+                <div class="row justify-content-md-center pb-3">
+                    <div class="col-md-auto">
+                        <h1>Création du fichier pour contrôle de stock</h1>
+                     </div>
+                </div>
+                <div class="row justify-content-md-center  border border-primary rounded-bottom">
+                    <div class="col-md-auto m-1">
+                        <h1 class="text-center">Etape 1</h1>
+                        <p>Sur JDE sur rendre dans <i>Registres > Registre des réservations</i></p>
+                        <img class="mx-auto border border-primary" src="img/step01.jpg" alt="etape 1 : registres des réservations">
+                    </div>
+                </div>
+                <div class="row justify-content-md-center  border border-primary rounded-bottom mt-3">
+                        <div class="col-md-auto m-1">
+                            <h1 class="text-center">Etape 2</h1>
+                            <p>inscrire dans N° d'article <i>1100*</i><br>
+                            <strong>Toutes les autres colonnes doivent être vident.</strong>
+                            </p>
+                            <img class="mx-auto border border-primary" src="img/step02.png" alt="etape 2 : sélection article">
+                        </div>
+                    </div>
+                    <div class="row justify-content-md-center  border border-primary rounded-bottom mt-3">
+                            <div class="col-md-auto m-1">
+                                <h1 class="text-center">Etape 3</h1>
+                                <p>Cliquez sur la flèche afin d'étendre la sélection sur tous les articles.
+                                </p>
+                                <img class="mx-auto border border-primary" src="img/step03.png" alt="etape 3 : étendre sélection">
+                            </div>
+                        </div>
+                        <div class="row justify-content-md-center  border border-primary rounded-bottom mt-3">
+                                <div class="col-md-auto m-1">
+                                    <h1 class="text-center">Etape 4</h1>
+                                    <p>Cliquez sur exporter.
+                                    </p>
+                                    <img class="mx-auto border border-primary" src="img/step04.png" alt="etape 4 : exportez les données">
                                 </div>
-                                <div class="custom-file">
-                                  <input type="file" class="custom-file-input" id="inputPHS">
-                                  <label class="custom-file-label" for="inputPHS">Choose file</label>
+                        </div>
+                        <div class="row justify-content-md-center  border border-danger rounded-bottom mt-3" id="box-arome">
+                                <div class="col-md-auto m-1">
+                                    <h1 class="text-center">Etape 5</h1>
+                                    <p>Sélectionner le fichier Plan salle Arôme.
+                                    </p>
+                                    <div id="selectionPHS">
+                                            <div class="input-group mb-3">
+                                                    <div class="input-group-prepend">
+                                                      <span class="input-group-text">Importer : </span>
+                                                    </div>
+                                                    <div class="custom-file">
+                                                      <input type="file" class="custom-file-input" id="inputSalleArome">
+                                                      <label class="custom-file-label" for="inputSalleArome">Fichier excel Salle arôme</label>
+                                                    </div>
+                                            </div>
+                                    </div>
                                 </div>
-                              </div>
-                </div>	
+                        </div>
+                        <div class="row justify-content-md-center  border border-danger rounded-bottom mt-3">
+                                <div class="col-md-auto m-1">
+                                    <h1 class="text-center">Etape 6</h1>
+                                    <p>Sélectionner le fichier exporter.
+                                    </p>
+                                    <div id="selectionPHS">
+                                            <div class="input-group mb-3">
+                                                    <div class="input-group-prepend">
+                                                      <span class="input-group-text">Importer : </span>
+                                                    </div>
+                                                    <div class="custom-file">
+                                                      <input type="file" class="custom-file-input" id="inputPHS">
+                                                      <label class="custom-file-label" for="inputPHS">Fichier excel</label>
+                                                    </div>
+                                            </div>
+                                    </div>
+                                </div>
+                        </div>
+            </div>
+
+	
             </main>
                 <div class="container-fluid invisible" id="dataContainer">
 
@@ -58,7 +124,8 @@
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/all.min.js"></script>
 
-	<script src="js/index.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/readSalleArome.js"></script>
 	<script src="js/readPHS.js"></script>
 </body>
 </html>
