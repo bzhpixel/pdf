@@ -13,6 +13,8 @@
 
 
     <script src="../MP/sheetJS/xlsx.full.min.js"></script>
+
+
 </head>
 <body>
 
@@ -76,8 +78,18 @@
                                 </div>
                         </div>
                         <div class="row justify-content-md-center  border border-danger rounded-bottom mt-3">
+                            <div class="col-md-auto m-1">
+                                <h1 class="text-center">Etape 6 (Optionnel)</h1>
+                                <p>
+                                De:<input type="date" id="dateDebut"><input type="time" id="heureDebut" value="05:00"><br>
+                                A:<input type="date" id="dateFin"><input type="time" id="heureFin" value="05:00">
+                                </p>
+                                
+                            </div>
+                    </div>
+                        <div class="row justify-content-md-center  border border-danger rounded-bottom mt-3">
                                 <div class="col-md-auto m-1">
-                                    <h1 class="text-center">Etape 6</h1>
+                                    <h1 class="text-center">Etape 7</h1>
                                     <p>Sélectionner le fichier exporter.
                                     </p>
                                     <div id="selectionPHS">
@@ -126,6 +138,12 @@
 
     <script src="js/index.js"></script>
     <script src="js/readSalleArome.js"></script>
-	<script src="js/readPHS.js"></script>
+    <script src="listes/fruit.js"></script>
+    <script src="listes/poudre.js"></script>
+    <script src="listes/arome.js"></script>
+    <script src="js/readPHS.js"></script>
+    
+
+
 </body>
 </html>
